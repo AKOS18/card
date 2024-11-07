@@ -46,7 +46,30 @@ a.button:active {
     justify-content: space-between;
     left: 25%;
 }
+.card-inner {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
 
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
 .card {
     width: 280px;
     height: 450px;
@@ -388,7 +411,7 @@ body{
 }
 
 .parallax {
-    background-image: url('hatterkep.jpg');
+    background-image: url('paralax.png');
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
@@ -396,7 +419,3 @@ body{
     margin-bottom: 50px;
 }
 
-.wave {
-    position: absolute;
-    margin-bottom: -20px;
-}
