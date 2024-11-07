@@ -411,7 +411,7 @@ body{
 }
 
 .parallax {
-    background-image: url('paralax.png');
+    background-image: 'paralax.png';
     background-attachment: fixed;
     background-size: cover;
     height: 600px;
